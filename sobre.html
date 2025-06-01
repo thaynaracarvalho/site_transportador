@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quem Somos – Sua Empresa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+    .top-bar {
+      background-color: #0a2d55;
+      color: #fff;
+      padding: 8px 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+    header nav {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    header nav img { height: 50px; margin-right: 30px; }
+    header nav a {
+      color: #666;
+      text-decoration: none;
+      margin-right: 25px;
+      padding: 20px 0;
+      font-weight: 600;
+      position: relative;
+    }
+    header nav a.active,
+    header nav a:hover { color: #0a2d55; }
+    header nav a.active::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0;
+      width: 100%; height: 4px; background-color: #0a2d55;
+    }
+
+    .hero {
+      background: url('banner-sobre.jpg') center/cover no-repeat;
+      height: 300px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 { color: #0a2d55; margin-bottom: 10px; }
+    blockquote {
+      font-size: 1.3rem; color: #555;
+      border-left: 5px solid #e4002b;
+      padding-left: 15px; margin: 20px 0;
+      font-style: italic;
+    }
+    .secao {
+      margin-top: 30px;
+    }
+    .secao h2 {
+      color: #0a2d55; margin-bottom: 10px;
+    }
+    .secao p {
+      line-height: 1.6; margin-bottom: 15px;
+    }
+    .video-section { margin-top: 40px; }
+    .video-section iframe {
+      width: 100%; height: 360px; border: none;
+    }
+    .unidades-section { margin-top: 40px; }
+    .unidades {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .unidade-card {
+      background: #fafafa; border-left: 5px solid #0a2d55;
+      border-radius: 4px; padding: 15px;
+    }
+    .unidade-card h3 { margin-top: 0; color: #0a2d55; }
+    .unidade-card p { margin: 8px 0 0; }
+    footer {
+      background-color: #0a2d55; color: #fff;
+      text-align: center; padding: 20px; margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div>📞 Tel: (91) 3255‑5007</div>
+    <div>✉️ contato@suaempresa.com.br</div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <img src="logo.png" alt="SuaEmpresa LOGO">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html" class="active">Quem Somos</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="trabalhe.html">Trabalhe Conosco</a>
+      <a href="rastreamento.html"
+         style="margin-left:auto; background:#e4002b; color:#fff;
+                padding:8px 15px; border-radius:4px; font-weight:600;">
+        RASTREAMENTO
+      </a>
+    </nav>
+  </header>
+
+  <!-- Banner / Hero -->
+  <div class="hero"></div>
+
+  <!-- Conteúdo Quem Somos -->
+  <section class="container">
+    <h1>Quem Somos</h1>
+    <blockquote>
+      “Nossa missão é trabalhar com visão de crescimento, sendo justo, honesto e humilde.”
+    </blockquote>
+
+    <!-- Seção Visão e Missão -->
+    <div class="secao">
+      <h2>Missão</h2>
+      <p>Oferecer soluções logísticas de excelência, assegurando rapidez, transparência e atendimento humanizado a todos os nossos clientes.</p>
+    </div>
+    <div class="secao">
+      <h2>Visão</h2>
+      <p>Ser reconhecida como a transportadora líder na região Norte, inovando continuamente em tecnologia e serviços para superar expectativas.</p>
+    </div>
+
+    <!-- Texto Institucional -->
+    <div class="secao texto-sobre">
+      <p>Somos uma empresa de logística com amplo conhecimento e expertise no transporte de cargas fracionadas. Atuamos com coletas e entregas de encomendas em toda a Região Norte e Estado do Maranhão.</p>
+      <p>Nascemos do desejo de elevar a logística da região Norte ao patamar dos grandes polos brasileiros, operando com excelência, rapidez e transparência.</p>
+      <p>Estamos presentes no mercado há mais de 15 anos, proporcionando aos nossos clientes uma experiência diferenciada.</p>
+      <p>Nossa frota é própria e equipada com sistemas de rastreamento e bloqueio, garantindo que sua carga chegue ao destino em perfeito estado.</p>
+    </div>
+
+    <!-- Vídeo Institucional -->
+    <div class="video-section">
+      <h2>Vídeo Institucional</h2>
+      <iframe src="https://www.youtube.com/embed/SEU_VIDEO" allowfullscreen></iframe>
+    </div>
+
+    <!-- Unidades -->
+    <div class="unidades-section">
+      <h2>Conheça Nossas Unidades</h2>
+      <div class="unidades">
+        <div class="unidade-card">
+          <h3>Santarém (PA) – Matriz</h3>
+          <p>Tel: (91) 3255‑5007</p>
+          <p>Email: santarem@empresa.com.br</p>
+        </div>
+        <div class="unidade-card">
+          <h3>Ananindeua (PA)</h3>
+          <p>Tel: (91) 3255‑5008</p>
+          <p>Email: ananindeua@empresa.com.br</p>
+        </div>
+        <div class="unidade-card">
+          <h3>Castanhal (PA)</h3>
+          <p>Tel: (91) 3255‑5009</p>
+          <p>Email: castanhal@empresa.com.br</p>
+        </div>
+        <div class="unidade-card">
+          <h3>Marabá (PA)</h3>
+          <p>Tel: (91) 3255‑5010</p>
+          <p>Email: maraba@empresa.com.br</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Sua Empresa – Todos os direitos reservados
+  </footer>
+
+</body>
+</html>

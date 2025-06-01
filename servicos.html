@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços – Sua Empresa</title>
+  <style>
+    /* ===== Estilos gerais ===== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+    .top-bar {
+      background-color: #0a2d55;
+      color: #fff;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .top-bar a { color: #fff; text-decoration: none; margin-left: 15px; }
+
+    header nav {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    header nav img { height: 50px; margin-right: 30px; }
+    header nav a {
+      color: #666;
+      text-decoration: none;
+      margin-right: 25px;
+      padding: 20px 0;
+      font-weight: 600;
+      position: relative;
+    }
+    header nav a.active,
+    header nav a:hover {
+      color: #0a2d55;
+    }
+    header nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #0a2d55;
+    }
+
+    /* ===== Conteúdo Serviços ===== */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      color: #0a2d55;
+      margin-bottom: 20px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: #fafafa;
+      border-radius: 8px;
+      padding: 20px;
+      border-left: 5px solid #e4002b;
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      margin-top: 0;
+      color: #0a2d55;
+    }
+    .service-card p {
+      margin: 10px 0 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div>📞 Tel: (91) 3255‑5007</div>
+    <div>✉️ Email: contato@suaempresa.com.br</div>
+  </div>
+
+  <!-- Header / Menu -->
+  <header>
+    <nav>
+      <img src="logo.png" alt="SuaEmpresa LOGO">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Quem Somos</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="servicos.html" class="active">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="trabalhe.html">Trabalhe Conosco</a>
+      <a href="rastreamento.html"
+         style="margin-left:auto; background:#e4002b; color:#fff; padding:8px 15px; border-radius:4px; font-weight:600;">
+        RASTREAMENTO
+      </a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Serviços -->
+  <section class="container">
+    <h1>Nossos Serviços</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Transporte de Cargas Fracionadas</h3>
+        <p>Envio seguro e eficiente de pequenas e médias cargas, ideal para e‑commerce e distribuidores.</p>
+      </div>
+      <div class="service-card">
+        <h3>Coletas e Entregas Express</h3>
+        <p>Serviço expresso com prazos reduzidos e rastreamento em tempo real para maior controle.</p>
+      </div>
+      <div class="service-card">
+        <h3>Rastreamento 24h</h3>
+        <p>Acompanhe cada etapa da sua remessa pelo nosso sistema e receba notificações instantâneas.</p>
+      </div>
+      <div class="service-card">
+        <h3>Armazenagem e Logística</h3>
+        <p>Espaços seguros para estocar seu estoque, com gestão de inventário e preparação de pedidos.</p>
+      </div>
+      <div class="service-card">
+        <h3>Distribuição Regional</h3>
+        <p>Cobertura em todo o Pará, Maranhão e Amazonas, com frota própria e entregas programadas.</p>
+      </div>
+      <div class="service-card">
+        <h3>Consultoria Logística</h3>
+        <p>Análise e otimização de rotas, redução de custos e melhoria contínua do fluxo de entregas.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

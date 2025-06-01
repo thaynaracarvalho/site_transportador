@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos – Sua Empresa</title>
+  <style>
+    /* ===== Estilos gerais ===== */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+    .top-bar {
+      background-color: #0a2d55;
+      color: #fff;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .top-bar a { color: #fff; text-decoration: none; margin-left: 15px; }
+
+    header nav {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    header nav img { height: 50px; margin-right: 30px; }
+    header nav a {
+      color: #666;
+      text-decoration: none;
+      margin-right: 25px;
+      padding: 20px 0;
+      font-weight: 600;
+      position: relative;
+    }
+    header nav a.active,
+    header nav a:hover {
+      color: #0a2d55;
+    }
+    header nav a.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #0a2d55;
+    }
+
+    /* ===== Conteúdo Produtos ===== */
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      color: #0a2d55;
+      margin-bottom: 20px;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #fafafa;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      color: #0a2d55;
+    }
+    .product-info p {
+      margin: 0 0 15px;
+      line-height: 1.4;
+      font-size: 0.95rem;
+    }
+    .product-info a.button {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #e4002b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .product-info a.button:hover {
+      background: #c30025;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div>📞 Tel: (91) 3255‑5007</div>
+    <div>✉️ contato@suaempresa.com.br</div>
+  </div>
+
+  <!-- Header / Menu -->
+  <header>
+    <nav>
+      <img src="logo.png" alt="SuaEmpresa LOGO">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Quem Somos</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="produtos.html" class="active">Produtos</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="trabalhe.html">Trabalhe Conosco</a>
+      <a href="rastreamento.html"
+         style="margin-left:auto; background:#e4002b; color:#fff; padding:8px 15px; border-radius:4px; font-weight:600;">
+        RASTREAMENTO
+      </a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Produtos -->
+  <section class="container">
+    <h1>Nossos Produtos</h1>
+    <div class="products-grid">
+      <!-- Produto 1 -->
+      <div class="product-card">
+        <img src="produto1.jpg" alt="Produto 1">
+        <div class="product-info">
+          <h3>Embalagem Fracionada</h3>
+          <p>Ideal para pequenos volumes e e‑commerce, com transporte dedicado e seguro.</p>
+          <a href="#" class="button">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="product-card">
+        <img src="produto2.jpg" alt="Produto 2">
+        <div class="product-info">
+          <h3>Carga Refrigerada</h3>
+          <p>Soluções para produtos sensíveis à temperatura, com caminhões climatizados.</p>
+          <a href="#" class="button">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="product-card">
+        <img src="produto3.jpg" alt="Produto 3">
+        <div class="product-info">
+          <h3>Transporte de Paletes</h3>
+          <p>Serviço eficiente para grandes volumes, otimização de espaço e agilidade.</p>
+          <a href="#" class="button">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- Produto 4 -->
+      <div class="product-card">
+        <img src="produto4.jpg" alt="Produto 4">
+        <div class="product-info">
+          <h3>Logística E‑commerce</h3>
+          <p>Integração com lojas online, pick & pack e envios expressos.</p>
+          <a href="#" class="button">Saiba Mais</a>
+        </div>
+      </div>
+      <!-- Adicione mais cards conforme necessário -->
+    </div>
+  </section>
+
+</body>
+</html>
